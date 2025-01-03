@@ -40,7 +40,7 @@ except Exception as e:
         raise e
 
 STAGE_NAME = "Model Trainer Stage"
-# model train
+# model training will start from here
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
    data_ingestion = ModelTrainerTrainingPipeline()
