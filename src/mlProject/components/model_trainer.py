@@ -35,4 +35,5 @@ class ModelTrainer:
         rf.fit(train_x, train_y)
 
         # Save the trained model
-        joblib.dump(rf, os.path.join(self.config.root_dir, self.config.model_name),compress=("zlib",9))   #here aadded code for compression
+        # joblib.dump(rf, os.path.join(self.config.root_dir, self.config.model_name),compress=("zlib",9))   #here aadded code for compression
+        joblib.dump(rf, os.path.join(self.config.root_dir, self.config.model_name))
