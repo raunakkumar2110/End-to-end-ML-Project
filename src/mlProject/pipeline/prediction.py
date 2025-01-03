@@ -14,7 +14,5 @@ class PredictionPipeline:
     def predict(self, data):
         prediction = self.model.predict(data)
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-    
-
         return prediction
     

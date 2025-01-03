@@ -53,7 +53,7 @@ def index():
 
         except Exception as e:
             print('The Exception message is: ',e)
-            return 'something is wrong'
+            return f"Something went wrong: {e}"
         
     else:
         return render_template('index.html')
@@ -64,4 +64,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port = 8080, debug = True)
+    app.run(host="0.0.0.0", port = 500, debug = True)
